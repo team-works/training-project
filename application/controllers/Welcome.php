@@ -20,6 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+            $test = "Test Smarty";
+            $this->tpl->assign('test', $test);
+            $this->tpl->display('index.tpl');
+            //$this->load->view('welcome_message');
 	}
 }

@@ -22,6 +22,15 @@ class Index extends K_Controller {
             // блок "МИ ГАРАНТУЄМО" - незмінний контент html
             $data['workspace'] .= $this->getGarantyBlock();
             
+            // блок "Наші переваги" - змінний контент
+            $data['workspace'] .= $this->getAdvantagesBlock();
+            
+            // блок "Як ми працюємо" - незмінний контент
+            $data['workspace'] .=$this->getWorkingBlock();
+            
+            // блок "Зворотній зв'язок"
+            $data['workspace'] .=$this->getFeedbackFromBlock();
+            
             // render data
             $this->view($data);
 	}
@@ -36,6 +45,18 @@ class Index extends K_Controller {
         
         private function getGarantyBlock() {
             return $this->tpl->fetch('garanty-block.tpl');
+        }
+        
+        private function getAdvantagesBlock() {
+            return $this->tpl->fetch('advantages.tpl');
+        }
+        
+        private function getWorkingBlock() {
+            return $this->tpl->fetch('working.tpl');
+        }
+        
+        private function getFeedbackFromBlock() {
+            return $this->tpl->fetch('feedbackform.tpl');
         }
 }
 

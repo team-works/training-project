@@ -2,17 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Index extends K_Controller {
-    
-        public function __construct() {
+        
+    public $template = 'one_column'; // two_cols | one_column
+
+
+    public function __construct() {
             parent::__construct();
         }    
     
 	public function index()
-	{
-            //$test = "Test Smarty";
-            //$this->tpl->assign('test', $test);
-            //$this->tpl->display('index.tpl');
-            
+	{      
             // слайдер
             $data['workspace'] = $this->sliderOnMain();
             
@@ -29,14 +28,14 @@ class Index extends K_Controller {
             $data['workspace'] .=$this->getWorkingBlock();
             
             // блок "Зворотній зв'язок"
-            $data['workspace'] .=$this->getFeedbackFromBlock();
+            $data['workspace'] .=$this->getFeedbackFormBlock();
             
             // render data
             $this->view($data);
 	}
         
         private function sliderOnMain() {
-            return;
+            return $this->tpl->fetch('slider.tpl');
         }
         
         private function getPropositionBlock() {
@@ -55,7 +54,7 @@ class Index extends K_Controller {
             return $this->tpl->fetch('working.tpl');
         }
         
-        private function getFeedbackFromBlock() {
+        private function getFeedbackFormBlock() {
             return $this->tpl->fetch('feedbackform.tpl');
         }
 }

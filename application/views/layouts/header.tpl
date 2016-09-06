@@ -4,15 +4,11 @@
     <title>Назва сторінки</title>
     
     <!-- jQuery library (served from Google) -->
-    <script src="media/js/jquery-3.1.0.js"></script>
+    <script src="media/js/jquery-1.8.2.js"></script>
     <!-- bxSlider Javascript file -->
-    <script src="media/jquery.bxslider/jquery.bxslider.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.bxslider').bxSlider();
-        });
-    </script>
+    <script src="media/js/jquery.bxslider/jquery.bxslider.js"></script>
+    <script src="media/js/main.js"></script>
     <!-- bxSlider CSS file -->
-    <link href="media/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="media/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
 </head>
 <body>

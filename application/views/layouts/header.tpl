@@ -10,5 +10,6 @@
     <script src="media/js/main.js"></script>
     <!-- bxSlider CSS file -->
     <link href="media/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="media/css/style.css" rel="stylesheet" />
 </head>
 <body>

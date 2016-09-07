@@ -1,4 +1,137 @@
 .slider {
   width: 1300px;
 }
+.garanty {
+  padding: 4px 0 50px 0;
+}
+.garanty .garanty-items {
+  margin: 10px 100px 0;
+}
+.garanty .garanty-items .delivery,
+.garanty .garanty-items .product,
+.garanty .garanty-items .docs,
+.garanty .garanty-items .posluga {
+  display: inline-block;
+  width: 255px;
+}
+.garanty .garanty-items .delivery .name,
+.garanty .garanty-items .product .name,
+.garanty .garanty-items .docs .name,
+.garanty .garanty-items .posluga .name {
+  font-family: Raleway Medium;
+  font-size: 24px;
+  text-align: center;
+  width: 210px;
+  margin: 0 auto;
+}
+.garanty .garanty-items .delivery .ico,
+.garanty .garanty-items .product .ico,
+.garanty .garanty-items .docs .ico,
+.garanty .garanty-items .posluga .ico {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.garanty .garanty-items .delivery .ico {
+  background: url(../img/css/delivery.png) no-repeat;
+  width: 160px;
+  height: 130px;
+}
+.garanty .garanty-items .product .ico {
+  background: url(../img/css/product.png) no-repeat;
+  width: 112px;
+  height: 146px;
+}
+.garanty .garanty-items .docs .ico {
+  background: url(../img/css/doc.png) no-repeat;
+  width: 135px;
+  height: 138px;
+}
+.garanty .garanty-items .posluga .ico {
+  background: url(../img/css/posluga.png) no-repeat;
+  width: 116px;
+  height: 136px;
+}
+.working {
+  /*padding-top: 70px;*/
+}
+.working ul {
+  position: relative;
+  padding: 55px 0 60px 0;
+}
+.working ul .mail,
+.working ul .notif,
+.working ul .dogovor,
+.working ul .deliv,
+.working ul .zamovl {
+  display: inline-block;
+}
+.working ul .mail .ico,
+.working ul .notif .ico,
+.working ul .dogovor .ico,
+.working ul .deliv .ico,
+.working ul .zamovl .ico {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: 2px solid #008a4f;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+.working ul .mail .text,
+.working ul .notif .text,
+.working ul .dogovor .text,
+.working ul .deliv .text,
+.working ul .zamovl .text {
+  text-align: center;
+  display: inline-flex;
+  width: 194px;
+  font-family: Raleway Medium;
+  font-size: 27px;
+  margin-top: 11px;
+}
+.working ul .mail ::before,
+.working ul .notif ::before,
+.working ul .dogovor ::before,
+.working ul .deliv ::before,
+.working ul .zamovl ::before {
+  content: "";
+  position: absolute;
+  width: 163px;
+  height: 52px;
+}
+.working ul .mail ::before {
+  background: url(../img/row-up.png) center no-repeat;
+  top: 20px;
+  left: 130px;
+}
+.working ul .mail .ico {
+  background: #ffffff url('../img/css/mail2.png') no-repeat center;
+}
+.working ul .notif ::before {
+  background: url(../img/row-down.png) center no-repeat;
+  bottom: 150px;
+  left: 380px;
+}
+.working ul .notif .ico {
+  background: #ffffff url('../img/css/notification.png') no-repeat center;
+}
+.working ul .dogovor ::before {
+  background: url(../img/row-up.png) center no-repeat;
+  top: 20px;
+  left: 625px;
+}
+.working ul .dogovor .ico {
+  background: #ffffff url('../img/css/dogovor.png') no-repeat center;
+}
+.working ul .zamovl ::before {
+  background: url(../img/row-down.png) center no-repeat;
+  bottom: 150px;
+  left: 875px;
+}
+.working ul .zamovl .ico {
+  background: #ffffff url('../img/css/zamovl.png') no-repeat center;
+}
+.working ul .deliv .ico {
+  background: #ffffff url('../img/css/deliver.png') no-repeat center;
+}
 /*# sourceMappingURL=style.css.map */

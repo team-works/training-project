@@ -2,3 +2,146 @@
 .slider {
     width: 1300px;
 }
+
+// мы гарантируем
+.garanty {
+    padding: 4px 0 50px 0;
+
+    .garanty-items {
+        margin: 10px 100px 0;
+
+        .delivery,
+        .product,
+        .docs,
+        .posluga {
+            display: inline-block;
+            width: 255px;
+            .name {
+                font-family: Raleway Medium;
+                font-size: 24px;
+                text-align: center;
+                width: 210px;
+                margin: 0 auto;
+            }
+            .ico {
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+        }
+
+        .delivery {
+            .ico {
+                background: url(../img/css/delivery.png) no-repeat;
+                width: 160px;
+                height: 130px;
+            }
+        }
+        .product {
+            .ico {
+                background: url(../img/css/product.png) no-repeat;
+                width: 112px;
+                height: 146px;
+            }
+        }
+        .docs {
+            .ico {
+                background: url(../img/css/doc.png) no-repeat;
+                width: 135px;
+                height: 138px;
+            }
+        }
+        .posluga {
+            .ico {
+                background: url(../img/css/posluga.png) no-repeat;
+                width: 116px;
+                height: 136px;
+            }
+        }
+    }
+}
+
+// как мы работаем
+.working {
+    /*padding-top: 70px;*/
+
+    ul {
+        position: relative;
+        padding: 55px 0 60px 0;
+
+        .mail,
+        .notif,
+        .dogovor,
+        .deliv,
+        .zamovl {
+            display: inline-block;
+            .ico {
+                width: 190px;
+                height: 190px;
+                border-radius: 50%;
+                border: 2px solid #008a4f;
+                margin-right: 50px;
+                margin-bottom: 20px;
+            }
+            .text {
+                text-align: center;
+                display: inline-flex;
+                width: 194px;
+                font-family: Raleway Medium;
+                font-size: 27px;
+                margin-top: 11px;
+            }
+            ::before {
+                content: "";
+                position: absolute;
+                width: 163px;
+                height: 52px;
+            }
+        }
+        .mail {
+            ::before {
+
+                background: url(../img/row-up.png) center no-repeat;
+                top: 20px;
+                left: 130px;
+            }
+            .ico {
+                background: #ffffff url('../img/css/mail2.png') no-repeat center;
+            }
+        }
+        .notif {
+            ::before {
+                background: url(../img/row-down.png) center no-repeat;
+                bottom: 150px;
+                left: 380px;
+            }
+            .ico {
+                background: #ffffff url('../img/css/notification.png') no-repeat center;
+            }
+        }
+        .dogovor {
+            ::before {
+                background: url(../img/row-up.png) center no-repeat;
+                top: 20px;
+                left: 625px;
+            }
+            .ico {
+                background: #ffffff url('../img/css/dogovor.png') no-repeat center;
+            }
+        }
+        .zamovl {
+            ::before {
+                background: url(../img/row-down.png) center no-repeat;
+                bottom: 150px;
+                left: 875px;
+            }
+            .ico {
+                background: #ffffff url('../img/css/zamovl.png') no-repeat center;
+            }
+        }
+        .deliv {
+            .ico {
+                background: #ffffff url('../img/css/deliver.png') no-repeat center;
+            }
+        }
+    }
+}

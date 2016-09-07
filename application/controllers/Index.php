@@ -51,7 +51,7 @@ class Index extends K_Controller {
         }
         
         private function getWorkingBlock() {
-            return $this->tpl->fetch('working.tpl');
+            return $this->tpl->fetch('working-block.tpl');
         }
         
         private function getFeedbackFormBlock() {

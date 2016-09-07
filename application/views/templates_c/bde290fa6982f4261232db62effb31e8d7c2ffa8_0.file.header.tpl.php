@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-04 08:00:00
+/* Smarty version 3.1.30, created on 2016-09-06 21:18:07
   from "C:\xampp\htdocs\training-project\application\views\layouts\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57cbb8604fbff5_79521694',
+  'unifunc' => 'content_57cf166f8b2c62_01264257',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bde290fa6982f4261232db62effb31e8d7c2ffa8' => 
     array (
       0 => 'C:\\xampp\\htdocs\\training-project\\application\\views\\layouts\\header.tpl',
-      1 => 1472968797,
+      1 => 1473189480,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_57cbb8604fbff5_79521694 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57cf166f8b2c62_01264257 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,6 +40,7 @@ function content_57cbb8604fbff5_79521694 (Smarty_Internal_Template $_smarty_tpl)
 >
     <!-- bxSlider CSS file -->
     <link href="media/js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="media/css/style.css" rel="stylesheet" />
 </head>
 <body>
 <?php }

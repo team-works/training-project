@@ -26,3 +26,22 @@ if (!function_exists('getCurrentLang')) {
     }
 
 }
+
+if (!function_exists('switchLang')) {
+
+    function switchLang() {
+        $lang = getCurrentLang();
+        $url = $_SERVER['REQUEST_URI'];
+
+        $urlUA = str_replace('/ru', '/ua', $url);
+        $urlRU = str_replace('/ua', '/ru', $url);
+
+        $l = '';
+        $l .= ($lang == 'ua') ? "<a class='active'>Укр</a>" : "<a href='$urlUA'>Укр</a>";
+        $l .= " | ";
+        $l .= ($lang == 'ru') ? "<a class='active'>Рус</a>" : "<a href='$urlRU'>Рус</a>";
+
+        return $l;
+    }
+    
+}

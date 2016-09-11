@@ -1,7 +1,7 @@
 <div class="category">
     <h1>Категорії товарів</h1>
     [-foreach from=$categories item=$item-]
-            <div class="categoty-item">
+            <div class="category-item">
                 <div class="name">
                     <a href="#">[-$item->catalogNameUA-]</a>
                 </div>
@@ -13,3 +13,5 @@
             </div>
     [-/foreach-]
 </div>
+
+<div class="clearfix" ></div>

@@ -1,3 +1,6 @@
+.clearfix {
+  clear: both;
+}
 .slider {
   width: 1300px;
 }
@@ -133,5 +136,38 @@
 }
 .working ul .deliv .ico {
   background: #ffffff url('../img/css/deliver.png') no-repeat center;
+}
+.category {
+  /*margin-top: 20px;*/
+  padding-bottom: 70px;
+  background-color: #f8f8f8;
+}
+.category .category-item {
+  margin-top: 5px;
+  float: left;
+  display: inline-block;
+}
+.category .category-item .name a {
+  margin: 0 auto;
+  color: #008a4f;
+  border-bottom: 1px solid;
+  font-family: Raleway SemiBold, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 15px;
+  width: 278px;
+  box-shadow: 0px 7px 9px -7px rgba(0, 128, 0, 0.23);
+  display: block;
+  text-decoration: none;
+}
+.category .category-item .img {
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+  width: 304px;
+  height: 260px;
+}
+.category .category-item .img img {
+  width: 102%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

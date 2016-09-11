@@ -49,8 +49,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'index';
+
+if (file_exists(APPPATH . 'controllers/Lang.php')) {
+    $route['default_controller'] = "lang";
+    $route['(ua|ru)'] = $this->config->item('default_controller');
+//    $route['(ua|ru)/(.+)'] = "$2";
+} else {
+    $route['default_controller'] = $this->config->item('default_controller');
+}
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['products/:num'] = 'catalogs/view_catalog';
+$route['(ru|ua)/([a-z]+)/([a-z]+)'] = "$2/$3$4";
+$route['(ru|ua)/([a-z]+)(/[0-9]+)?'] = "$2/index/$3";

@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Index extends K_Controller {
         
     public $template = 'one_column'; // two_cols | one_column
+    public $model = 'Catalog_model';
 
 
     public function __construct() {
@@ -39,6 +40,9 @@ class Index extends K_Controller {
         }
         
         private function getPropositionBlock() {
+            $categories = $this->obj->getCategoriesOnMain();
+            $this->tpl->assign('categories', $categories);
+            
             return $this->tpl->fetch('categories-on-main.tpl');
         }
         

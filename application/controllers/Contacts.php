@@ -10,7 +10,15 @@ class Contacts extends K_Controller {
     }
     
     public function index() {
-        echo "Контакти";
+        // блок "Про компанію"
+        $data['workspace'] = $this->getContacts();
+        
+        // render data
+        $this->view($data);
+    }
+    
+    private function getContacts() {
+        return $this->tpl->fetch('contacts.tpl');
     }
     
 }

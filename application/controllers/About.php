@@ -10,7 +10,15 @@ class About extends K_Controller {
     }
     
     public function index() {
-        echo "Про компанію";
+        // блок "Про компанію"
+        $data['workspace'] = $this->getAboutCompany();
+        
+        // render data
+        $this->view($data);
+    }
+    
+    private function getAboutCompany() {
+        return $this->tpl->fetch('delivery.tpl');
     }
     
 }

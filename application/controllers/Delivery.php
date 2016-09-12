@@ -10,7 +10,15 @@ class Delivery extends K_Controller {
     }
     
     public function index() {
-        echo "Доставка";
+        // блок "Про компанію"
+        $data['workspace'] = $this->getDeliveryBlock();
+        
+        // render data
+        $this->view($data);
+    }
+    
+    private function getDeliveryBlock() {
+        return $this->tpl->fetch('delivery.tpl');
     }
     
 }

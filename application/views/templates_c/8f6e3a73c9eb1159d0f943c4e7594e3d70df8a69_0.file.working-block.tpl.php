@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-06 21:25:48
+/* Smarty version 3.1.30, created on 2016-09-11 23:06:02
   from "C:\xampp\htdocs\training-project\application\views\working-block.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57cf183cdc0e22_30262758',
+  'unifunc' => 'content_57d5c73a706925_15822724',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8f6e3a73c9eb1159d0f943c4e7594e3d70df8a69' => 
     array (
       0 => 'C:\\xampp\\htdocs\\training-project\\application\\views\\working-block.tpl',
-      1 => 1473189756,
+      1 => 1473627904,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_57cf183cdc0e22_30262758 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57d5c73a706925_15822724 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="working">
     <h1>Як ми працюємо</h1>
@@ -60,5 +60,6 @@ function content_57cf183cdc0e22_30262758 (Smarty_Internal_Template $_smarty_tpl)
         </ul>
     </div>
 </div>
-<?php }
+
+<div class="clearfix" ></div><?php }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-09-06 21:18:07
+/* Smarty version 3.1.30, created on 2016-09-11 23:06:02
   from "C:\xampp\htdocs\training-project\application\views\garanty-block.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_57cf166f8705d6_58980908',
+  'unifunc' => 'content_57d5c73a674111_96962757',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8b74c373f1ea74aad00986c2e64d51723fa78fb2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\training-project\\application\\views\\garanty-block.tpl',
-      1 => 1473189161,
+      1 => 1473627892,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_57cf166f8705d6_58980908 (Smarty_Internal_Template $_smarty_tpl) {
+function content_57d5c73a674111_96962757 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="garanty">
     <h1>Гарантія</h1>
@@ -55,6 +55,8 @@ function content_57cf166f8705d6_58980908 (Smarty_Internal_Template $_smarty_tpl)
         </ul>
     </div>
 </div>
+            
+<div class="clearfix" ></div>
 
 <?php }
 }

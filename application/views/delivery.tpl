@@ -1,4 +1,4 @@
-<div class="category">
+<div class="delivery">
     <h1>Доставка</h1>
     
 </div>

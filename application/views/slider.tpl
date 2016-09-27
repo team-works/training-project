@@ -7,3 +7,5 @@
         <li><img src="../media/img/slider/4.jpg" title="4" /></li>
     </ul>
 </div>
+
+<div class="clearfix" ></div>

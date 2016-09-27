@@ -30,3 +30,5 @@
         </ul>
     </div>
 </div>
+
+<div class="clearfix" ></div>

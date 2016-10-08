@@ -27,6 +27,26 @@ if (!function_exists('getCurrentLang')) {
 
 }
 
+if (!function_exists('multyLang')) {
+
+    function multyLang($ua, $ru, $return = false) {
+        if ($return) {
+            return getCurrentLang() == 'ua' ? $ua : $ru;
+        } else {
+            echo getCurrentLang() == 'ua' ? $ua : $ru;
+        }
+    }
+
+}
+
+if (!function_exists('getCurrentLang')) {
+
+    function getCurrentLang() {
+        return get_instance()->uri->segment(1);
+    }
+
+}
+
 if (!function_exists('switchLang')) {
 
     function switchLang() {

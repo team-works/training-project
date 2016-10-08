@@ -1,7 +1,6 @@
-<?php
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-
-class Catalog_model extends CI_Model {
+class Catalog_model extends Base_model {
     
     public $table = 'catalogs';
     
@@ -17,4 +16,7 @@ class Catalog_model extends CI_Model {
                         ->result();
     }
     
+    public function addCategoriesInDb() {
+        
+    }
 }

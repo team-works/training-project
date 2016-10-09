@@ -1,5 +1,14 @@
+/*Перевизначення класів бутстрапу*/
+.container {
+  width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .clearfix {
   clear: both;
+}
+.bg-grey {
+  background-color: #f8f8f8 !important;
 }
 .slider {
   width: 1300px;

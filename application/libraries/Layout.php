@@ -5,10 +5,15 @@ require_once(APPPATH . 'libraries/Tpl.php');
 
 class Layout {
     
+    public $template;
+    // meta data
+    public $title;
+    
     const EXT = '.tpl';
     
     public function __construct() {
         $this->tpl = new Tpl();
+        
     }
 
     public function output($data = NULL){
@@ -20,5 +25,6 @@ class Layout {
         $pathTpl = 'layouts/' . $data['template'] . self::EXT;
         $this->tpl->display($pathTpl);
     }
+
     
 }

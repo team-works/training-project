@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Назва сторінки</title>
-    
+    <title>[-$title|default:lang('default_title')-] | [-site_name()-]</title>
     <!-- jQuery library (served from Google) -->
     <script src="../media/js/jquery-1.8.2.js"></script>
     <!-- bxSlider Javascript file -->

@@ -2,9 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class K_Controller extends CI_Controller {
-        
-    public $template = 'two_cols'; // two_cols | one_column | admin
+    
+    public $title;
+    public $heading = ''; 
     public $model;
+    
+    public $template = 'two_cols'; // two_cols | one_column | admin
+    
 
     public function __construct() {
         parent::__construct();
@@ -13,7 +17,10 @@ class K_Controller extends CI_Controller {
             $this->load->model($this->model, 'obj');
         }
         // визначаэмо мову сайту
-        $this->check_lang();        
+        $this->check_lang();
+        
+        // підгружаємо переклади
+        $this->setTranslations();        
             
     }
     
@@ -32,7 +39,27 @@ class K_Controller extends CI_Controller {
         }
     }
     
+    private function setTranslations() {
+        $lang = $this->uri->segment(1);
+
+        // 
+        switch ($lang) {
+
+            case 'ua':
+                $this->lang->load('views', 'ukrainian');
+                $this->config->set_item('language', 'ukrainian');
+                break;
+
+            case 'ru':
+                $this->lang->load('views', 'russian');
+                $this->config->set_item('language', 'russian');
+                break;
+        }
+    }
+    
     protected function view($data = '') {
+        $data['heading'] = $this->heading;
+        $data['title'] = $this->title;
         $data['template'] = $this->template;
         $this->layout->output($data);
     }

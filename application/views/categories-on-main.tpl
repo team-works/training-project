@@ -1,17 +1,24 @@
 <div class="category">
-    <h1>Категорії товарів</h1>
-    [-foreach from=$categories item=$item-]
+    <div class="container">
+        <div class="page-title">
+            <fieldset>
+                <legend align="center" class="bg-grey">[-lang('proposition')-]</legend>
+            </fieldset>
+        </div>
+        [-foreach from=$categories item=$item-]
+            [-assign var='catalogName' value=multyLang([-$item->catalogNameUA-], [-$item->catalogNameRU-])-]
+        
             <div class="category-item">
                 <div class="name">
-                    <a href="#">[-$item->catalogNameUA-]</a>
+                    <a href="#" >[-$catalogName-]</a>
                 </div>
                 <div class="img">
                     <a href="#" >
-                        <img src="[-base_url()-]media/img/catalog/[-$item->catalogLogo-]" width="304" height="260" alt="[-$item->catalogNameUA-]" />
+                        <img src="[-base_url()-]media/img/catalog/[-$item->catalogLogo-]" width="304" height="260" alt="[-$catalogName-]" />
                     </a>
                 </div>
             </div>
-    [-/foreach-]
+        [-/foreach-]
+    </div>
 </div>
-
 <div class="clearfix" ></div>

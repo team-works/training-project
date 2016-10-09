@@ -109,6 +109,39 @@ if ( ! function_exists('current_url'))
 
 // ------------------------------------------------------------------------
 
+if (!function_exists('getArgument')) {
+
+    /**
+     * getArgument
+     *
+     * Returns the URL segment 
+     *
+     * @return	string|int
+     */
+    function getArgument($segment=1, $type='int', $default=0) {
+        $CI = & get_instance();
+        
+        $segm = $CI->uri->segment($segment);
+        switch ($type) {
+            case 'int':
+                if( (int)$segm ) {
+                    return $segm;
+                }
+                return $default;
+                break;
+            case 'str':
+                if( (string)$segm ) {
+                    return $segm;
+                }
+                return $default;
+                break;
+        }
+    }
+
+}
+
+// ------------------------------------------------------------------------
+
 if ( ! function_exists('uri_string'))
 {
 	/**

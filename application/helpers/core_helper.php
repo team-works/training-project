@@ -39,14 +39,6 @@ if (!function_exists('multyLang')) {
 
 }
 
-if (!function_exists('getCurrentLang')) {
-
-    function getCurrentLang() {
-        return get_instance()->uri->segment(1);
-    }
-
-}
-
 if (!function_exists('switchLang')) {
 
     function switchLang() {

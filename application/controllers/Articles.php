@@ -15,6 +15,8 @@ class Articles extends K_Controller {
     }
     
     public function index() {
+        // Хлібні крихти
+        $data['breadcrumbs'] = initBreadcrumbs( array(lang('article') => 'articles/') );
         
         // page content
         $data['workspace'] = $this->getArticleList();

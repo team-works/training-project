@@ -8,6 +8,7 @@ class Layout {
     public $template;
     // meta data
     public $title;
+    public $breadCrumbs;
     
     const EXT = '.tpl';
     

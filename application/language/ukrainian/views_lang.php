@@ -1,5 +1,8 @@
 <?php
 
+$lang['home'] = 'Головна';
+$lang['catalog'] = 'Категорія';
+
 /* general page */
 $lang['delivery'] = 'Оперативну доставку';
 $lang['productQuality'] = '100% якість'."<br>".'товару';

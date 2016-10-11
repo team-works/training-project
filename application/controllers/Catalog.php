@@ -11,6 +11,8 @@ class Catalog extends K_Controller {
     }
     
     public function index() {
+        // Хлібні крихти
+        $data['breadcrumbs'] = initBreadcrumbs( array(lang('catalog') => 'catalog/') );
         
         // блок "МИ ПРОПОНУЄМО" - каталог категорій
         $data['workspace'] = $this->getPropositionBlock();

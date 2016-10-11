@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 /*** RU ***/
+
+$lang['home'] = 'Главная';
+$lang['catalog'] = 'Категория';
+
 // general page
 $lang['garancy'] = 'Мы гарантируем';
 $lang['delivery'] = 'Оперативную доставку';

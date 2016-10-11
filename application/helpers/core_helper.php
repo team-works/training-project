@@ -39,6 +39,19 @@ if (!function_exists('multyLang')) {
 
 }
 
+if (!function_exists('initBreadcrumbs')) {
+
+    function initBreadcrumbs($breadArray) {
+        $CI = & get_instance();
+
+        // load Breadcrumbs
+        $CI->load->library('breadcrumbs');
+        // add breadcrumbs
+        return $CI->breadcrumbs->run($breadArray);
+    }
+
+}
+
 if (!function_exists('switchLang')) {
 
     function switchLang() {

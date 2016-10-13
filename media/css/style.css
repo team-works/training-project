@@ -1,11 +1,19 @@
-/*Перевизначення класів бутстрапу*/
-.container {
-  width: 1280px;
-  margin-right: auto;
-  margin-left: auto;
-}
 .clearfix {
   clear: both;
+}
+.title-content-page {
+  margin-bottom: 3px;
+  text-align: center;
+}
+.title-content-page h1 {
+  color: #008000;
+  text-transform: uppercase;
+  padding: 0 35px;
+  border-bottom: 2px solid #9DD7a0;
+  font-size: 25px;
+  padding-bottom: 1px;
+  font-weight: 100;
+  display: inline-block;
 }
 .bg-grey {
   background-color: #f8f8f8 !important;

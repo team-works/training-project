@@ -77,9 +77,9 @@ if (!function_exists('switchLang')) {
         $urlRU = str_replace('/ua', '/ru', $url);
 
         $l = '';
-        $l .= ($lang == 'ua') ? "<a class='active'>Укр</a>" : "<a href='$urlUA'>Укр</a>";
+        $l .= ($lang == 'ua') ? "<a class='active'>Укр </a>" : "<a href='$urlUA'>Укр</a>";
         $l .= "<span class='lang-delimiter'></span>";
-        $l .= ($lang == 'ru') ? "<a class='active'>Рус</a>" : "<a href='$urlRU'>Рус</a>";
+        $l .= ($lang == 'ru') ? "<a class='active'> Рус</a>" : "<a href='$urlRU'>Рус</a>";
 
         return $l;
     }

@@ -11,6 +11,12 @@ class Article_model extends Base_model {
         parent::__construct();
     }
     
+    function dsAdminArticleList() {
+        return $this->db->order_by('articleTime', 'DESC')
+                ->get($this->table)
+                ->result();
+    }
+    
     function getArticles() {
         return $this->db->order_by('articleTime', 'DESC')
                 ->where('articleStatus', self::ACTIVE_STATUS)

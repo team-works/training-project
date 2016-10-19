@@ -1,4 +1,6 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+/*** UA ***/
 
 $lang['home'] = 'Головна';
 $lang['catalog'] = 'Категорія';
@@ -18,4 +20,11 @@ $lang['propConstructionMaterials'] = 'Будівельні матеріали';
 
 
 $lang['article'] = 'Статті';
+
+/* admin */
+$lang['catalogManage'] = 'Керування каталогами';
+$lang['manage'] = 'Керування';
+$lang['name'] = 'Назва';
+
+/*** UA ***/
 

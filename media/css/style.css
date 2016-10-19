@@ -1,5 +1,18 @@
+.container {
+  width: 1240px;
+}
 .clearfix {
   clear: both;
+}
+.page-menu {
+  background: lightskyblue;
+}
+.page-menu ul li,
+.page-menu ul a {
+  display: inline-block;
+}
+.page-menu ul a {
+  margin-right: 40px;
 }
 .title-content-page {
   margin-bottom: 3px;

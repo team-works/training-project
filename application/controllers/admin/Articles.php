@@ -10,7 +10,7 @@ class Articles extends K_Controller {
     public function __construct() {
         parent::__construct();
         
-        $this->load->library('table');
+        $this->load->library('tables');
     }
     
     public function index() {
@@ -22,17 +22,14 @@ class Articles extends K_Controller {
             'name', 'manage'
         );
         
-        $data['workspace'] = $this->table->dataview(
-                $this->obj, 'dsAdminArticleList', 'admin-article-list', $tableHead, $this->interfaces()
+        $data['workspace'] = $this->tables->dataview(
+                
         );
 
         // render data
         $this->view($data);
     }
     
-    private function interfaces() {
-        return array(
-        );
-    }
+
 }
 

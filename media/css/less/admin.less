@@ -1,3 +1,32 @@
+.dataview-table {
+    width: 100%;
+    tr {
+        th {
+            background: rgba(84, 106, 109, 0.27);
+            text-align: left;
+                padding: 10px 5px;
+            font-size: 15px;
+        }
+        td {
+            padding: 5px;
+            font-size: 13px;
+            a.link { 
+                display: block;
+                cursor: pointer;
+            }
+            .separator {
+                clear: both;
+                height: 1px;
+                margin: 10px 0;
+            }
+        }
+        &:hover {
+            background: #eee;
+        }
+        border-bottom: 1px solid #EEE;
+    }
+}
+
 .right-column {
     width: 900px;
     float: right;

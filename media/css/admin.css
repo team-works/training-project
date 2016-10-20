@@ -1,3 +1,31 @@
+.dataview-table {
+  width: 100%;
+}
+.dataview-table tr {
+  border-bottom: 1px solid #EEE;
+}
+.dataview-table tr th {
+  background: rgba(84, 106, 109, 0.27);
+  text-align: left;
+  padding: 10px 5px;
+  font-size: 15px;
+}
+.dataview-table tr td {
+  padding: 5px;
+  font-size: 13px;
+}
+.dataview-table tr td a.link {
+  display: block;
+  cursor: pointer;
+}
+.dataview-table tr td .separator {
+  clear: both;
+  height: 1px;
+  margin: 10px 0;
+}
+.dataview-table tr:hover {
+  background: #eee;
+}
 .right-column {
   width: 900px;
   float: right;

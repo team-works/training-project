@@ -10,6 +10,10 @@ class Articles extends K_Controller {
     public function __construct() {
         parent::__construct();
         
+        // set meta for page
+        $this->title = lang('article');
+        $this->heading = lang('article');
+        
         $this->load->library('tables');
     }
     

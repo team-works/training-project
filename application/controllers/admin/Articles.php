@@ -23,7 +23,7 @@ class Articles extends K_Controller {
         );
         
         $data['workspace'] = $this->tables->dataview(
-                
+                $this->obj, 'dsAdminArticleList', 'article-action-list', $tableHead                
         );
 
         // render data

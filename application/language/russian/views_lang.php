@@ -25,5 +25,6 @@ $lang['article'] = 'Статьи';
 $lang['catalogManage'] = 'Управление каталогами';
 $lang['manage'] = 'Управление';
 $lang['name'] = 'Название';
+$lang['emptyPage'] = 'Записи на странице отсутствуют.';
 
 /*** RU ***/

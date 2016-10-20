@@ -25,6 +25,7 @@ $lang['article'] = 'Статті';
 $lang['catalogManage'] = 'Керування каталогами';
 $lang['manage'] = 'Керування';
 $lang['name'] = 'Назва';
+$lang['emptyPage'] = 'Записи на сторінці відсутні.';
 
 /*** UA ***/
 

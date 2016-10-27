@@ -26,6 +26,11 @@ $lang['catalogManage'] = 'Керування каталогами';
 $lang['manage'] = 'Керування';
 $lang['name'] = 'Назва';
 $lang['emptyPage'] = 'Записи на сторінці відсутні.';
+$lang['add'] = 'Додати';
+$lang['edit']  = 'Редагувати';
+$lang['delete'] = 'Видалити';
+$lang['unPublish'] = 'Зняти з публікації';
+$lang['publish'] = 'Опублікувати';
 
 /*** UA ***/
 

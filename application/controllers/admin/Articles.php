@@ -27,13 +27,26 @@ class Articles extends K_Controller {
         );
         
         $data['workspace'] = $this->tables->dataview(
-                $this->obj, 'dsAdminArticleList', 'article-action-list', $tableHead                
+                $this->obj, 'dsAdminArticleList', 'admin-article-list', $tableHead, $this->interfaces()                
         );
 
         // render data
         $this->view($data);
     }
     
-
+    private function interfaces() {
+        return array(
+            'addCatalog' => array(
+                'title' => lang('add'),
+                'form' => 'updatearticle',
+                'class' => 'success',
+                'onclick' => array(
+                    'method' => 'doAction',
+                    'argument' => 'updatearticle'
+                )
+            )
+        );
+    } 
+    
 }
 

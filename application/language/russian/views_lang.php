@@ -31,5 +31,8 @@ $lang['edit'] = 'Редактировать';
 $lang['delete'] = 'Удалить';
 $lang['unPublish'] = 'Снять с публикации';
 $lang['publish'] = 'Опубликовать';
+$lang['contentPages'] = 'Контентные страницы';
+$lang['disable'] = 'Деактивировать';
+$lang['activate'] = 'Активировать';
 
 /*** RU ***/

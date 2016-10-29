@@ -39,6 +39,38 @@
     background-color: #f8f8f8 !important;
 }
 
+.breadcrumb {
+    display: block;
+    list-style: none;
+    li {
+        float: left;
+        margin-bottom: 5px;
+        a {
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: -0.255px;
+            color: @black;
+            display: inline-block;
+            border-bottom: 1px solid transparent;
+            &:hover {
+                color: blue;
+            }
+        }
+        &.active {
+            color: @green;
+            font-size: 17px;
+
+        }
+    }
+    >li + li:before {
+        content: "/\00a0";
+        padding-left: 5px;
+        color: @black;
+
+    }
+}
+
 // слайдер
 .slider {
     width: 1300px;

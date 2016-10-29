@@ -25,7 +25,7 @@ class Contents_model extends Base_model {
     function dsAdminContentsPageList() {
         return $this->db
                 ->order_by('contentOrder', 'ASC')
-                ->get($this->table, $this->limit, $this->offset)
+                ->get($this->table)
                 ->result();
     }
     

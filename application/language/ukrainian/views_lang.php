@@ -31,6 +31,9 @@ $lang['edit']  = 'Редагувати';
 $lang['delete'] = 'Видалити';
 $lang['unPublish'] = 'Зняти з публікації';
 $lang['publish'] = 'Опублікувати';
+$lang['contentPages'] = 'Контентні сторінки';
+$lang['disable'] = 'Деактивувати';
+$lang['activate'] = 'Активувати';
 
 /*** UA ***/
 

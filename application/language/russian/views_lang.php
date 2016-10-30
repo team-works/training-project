@@ -18,8 +18,11 @@ $lang['propReinforcedConcrete'] = 'Железобетонные изделия';
 $lang['propMetal'] = 'Металлопрокат';
 $lang['propConstructionMaterials'] = 'Строительные материалы';
 
-
+$lang['delivOnGenPage'] = 'Доставка';
+$lang['aboutCompany'] = 'О компании';
+$lang['contacts'] = 'Контакты';
 $lang['article'] = 'Статьи';
+$lang['catalog'] = 'Каталог';
 
 /* admin */
 $lang['catalogManage'] = 'Управление каталогами';
